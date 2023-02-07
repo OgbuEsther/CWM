@@ -9,7 +9,7 @@ export interface clientDetails {
 
 export interface userDashBoard {
     message :  {}[];
-    paymentLog : string[];
+    paymentLog : {}[];
     bills : string;
     schedule : string
 }
@@ -24,10 +24,13 @@ dashBoard : {}[];
 
 export interface adminDashboard {
 message : {}[];
-paymentLog : string[];
+paymentLog : {}[];
 approvals : boolean;
 viewArea: string;
 expectedPayment : string;
 
 }
 
+
+
+//socket.io
