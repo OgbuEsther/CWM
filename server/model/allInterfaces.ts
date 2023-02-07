@@ -8,7 +8,7 @@ export interface clientDetails {
 }
 
 export interface userDashBoard {
-    message : string;
+    message :  {}[];
     paymentLog : string[];
     bills : string;
     schedule : string
@@ -16,8 +16,18 @@ export interface userDashBoard {
 
 
 export interface adminDetails{
-    
+name : string;
+email : string;
+password : string;
+dashBoard : {}[];
 }
 
-export interface adminDashboard {}
+export interface adminDashboard {
+message : {}[];
+paymentLog : string[];
+approvals : boolean;
+viewArea: string;
+expectedPayment : string;
+
+}
 
