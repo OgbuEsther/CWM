@@ -15,3 +15,9 @@ export interface userDashBoard {
 }
 
 
+export interface adminDetails{
+    
+}
+
+export interface adminDashboard {}
+
