@@ -14,7 +14,8 @@ const clientSchema = new Schema<clientDetails>({
         type : String,
         lowercase : true,
         required : [true , "please enter a valid email",],
-        trim : true
+        trim : true,
+        unique : true
     },
     password : {
         type : String,
