@@ -4,10 +4,11 @@ export interface clientDetails {
     clientType : boolean;
     email : string;
     phoneNumber : string;
-    dashBoard : {}[]
+    dashBoard : {}[];
+    password : string
 }
 
-export interface userDashBoard {
+export interface clientDashBoard {
     message :  {}[];
     paymentLog : {}[];
     bills : string;
