@@ -1,8 +1,12 @@
-import express, { Application } from "express"
-import cors from "cors"
+import express, { Application } from "express";
+import cors from "cors";
+import { errorHandler } from "./middlewares/error/errorHandler";
 
-const appConfig = (app:Application) =>{
-app.use(express.json()).use(cors())
-}
+const appConfig = (app: Application) => {
+  app.use(express.json()).use(cors());
 
-export default appConfig 
+  //error handler : should be the last imported middleware in your application
+  app.use(errorHandler);
+};
+
+export default appConfig;
